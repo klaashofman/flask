@@ -19,5 +19,13 @@ def login():
 def user(usr):
     return f"<h1>Post called {usr}</h1>"
 
+@app.route("/Pricing")
+def pricing():
+    return render_template("pricing.html")
+
+@app.route("/Features")
+def features():
+    return render_template("features.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
